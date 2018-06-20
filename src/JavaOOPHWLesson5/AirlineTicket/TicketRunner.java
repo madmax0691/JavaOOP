@@ -4,23 +4,23 @@ import java.time.LocalDateTime;
 
 public class TicketRunner {
     public static void main(String[] args) {
-        PassengerInfo passengerInfo = new PassengerInfo("Alex","Bogdanov","HQ341056");
-        FlightInfo flightInfo = new FlightInfo(1,"Kyiv","NewYork",
-                LocalDateTime.of(2018,3,12,13,15,0,0),
-                25,1000);
-        Ticket ticket = new Ticket(1,passengerInfo,flightInfo);
+        PassengerInfo passengerInfo = new PassengerInfo("Alex", "Bogdanov", "HQ341056");
+        FlightInfo flightInfo = new FlightInfo(1, "Kyiv", "NewYork",
+                LocalDateTime.of(2018, 3, 12, 13, 15, 0, 0),
+                25, 1000);
+        Ticket ticket = new Ticket(1, passengerInfo, flightInfo);
 
         System.out.println(passengerInfo);
         System.out.println(flightInfo);
         System.out.println(ticket);
         System.out.println(ticket.getCost());
 
-        passengerInfo = new PassengerInfo("Dmitriy","Spas","DK105066");
-        flightInfo = new FlightInfo(2,"Kyiv","Monaco",
-                LocalDateTime.of(2018,4,10,15,10,0,0),
-                2,2000);
-        ticket = new VipTicket(2,passengerInfo,flightInfo,new Baggage(30,2),
-                new Meal("VIP",true,50));
+        passengerInfo = new PassengerInfo("Dmitriy", "Spas", "DK105066");
+        flightInfo = new FlightInfo(2, "Kyiv", "Monaco",
+                LocalDateTime.of(2018, 4, 10, 15, 10, 0, 0),
+                2, 2000);
+        ticket = new VipTicket(2, passengerInfo, flightInfo, new Baggage(30, 2),
+                new Meal("VIP", true, 50));
 
         System.out.println(passengerInfo);
         System.out.println(flightInfo);
