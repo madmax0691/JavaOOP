@@ -19,6 +19,6 @@ public class VipTicket extends Ticket {
         return "VipTicket{" +
                 "baggage=" + baggage +
                 ", meal=" + meal +
-                '}';
+                "} " + super.toString();
     }
 }
